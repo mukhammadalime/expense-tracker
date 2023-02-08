@@ -1,0 +1,15 @@
+.header {
+  justify-content: space-between;
+  padding: 2.5rem 0;
+
+  svg {
+    cursor: pointer;
+    color: $color-white;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+  }
+}

@@ -10,4 +10,40 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  background-color: $color-black;
+}
+
+/// HELPER CLASSNAMES
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #000000;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.gap-4 {
+  gap: 0.4rem;
+}
+.gap-6 {
+  gap: 0.6rem;
+}
+.gap-8 {
+  gap: 0.8rem;
+}
+
+.cursor {
+  cursor: pointer;
 }

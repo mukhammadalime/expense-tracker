@@ -1,0 +1,132 @@
+.homepage {
+}
+
+.balance {
+  text-align: center;
+  margin: 6.5rem 0 9rem;
+
+  &__top {
+    justify-self: center;
+    margin-bottom: 0.5rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h1,
+    span {
+      color: $color-white;
+    }
+
+    span {
+      margin-left: 0.5rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.balance-navbar {
+  height: 8rem;
+  background-color: #ffffff2f;
+  border-radius: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 0.5rem;
+
+  .active-item {
+    @media (max-width: $tablet) {
+      background-color: #ffffff38;
+      border: 1px solid #ffffff1d;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border: 1px solid transparent;
+
+    &:not(:last-child) {
+      border-right: 1px solid #ffffff7b;
+    }
+
+    @media (max-width: $tablet) {
+      cursor: pointer;
+      border-radius: 1rem;
+      border-right: 1px solid transparent !important;
+    }
+
+    h4 {
+      color: $color-white;
+      font-size: 2.7rem;
+    }
+
+    span {
+      color: #ffffff8f;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.grid-layout {
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.category-row {
+  justify-content: space-between;
+  height: 6rem;
+  align-items: center;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #ffffff4a;
+
+  h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__right {
+    align-items: center;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.main-content {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+
+  @media (max-width: $tablet) {
+    display: block !important;
+  }
+}
+
+.add-category {
+  place-items: center;
+  height: 6rem;
+
+  &__content {
+    align-items: center;
+    cursor: pointer;
+
+    div {
+      border: 2px solid #ffffff;
+      place-items: center;
+      border-radius: 50%;
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+
+  h6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
